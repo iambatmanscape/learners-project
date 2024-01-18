@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+  overflow-x:hidden ;
+  font-family: sans-serif;
+  background-color:#e726d82b;
+}
+.container {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-top: 1rem;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+/**Navbar starts*/
+nav {
+  box-shadow: 0 -3px 4px 3px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  list-style-type: none;
+  font-size: 1.5rem;
+  font-family: monospace;
+  background-color: white;
+}
+.nav-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+/*Navbar ends*/
+
+/*Home Starts*/
+
+.home-header {
+  margin-top: 2rem;
+}
+.home-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:flex-end;
+  flex-wrap: wrap;
+  
+}
+.search {
+  height: 30px;
+  width: 180px;
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: #f7bbf2;
+  transition: width 0.3s ease-out;
+}
+
+.search:focus {
+  outline: none;
+}
+.search-icon {
+  position: relative;
+  top: 0.3rem;
+  cursor: pointer;
+}
+
+/*Home ends*/
+
+/*Displaying result start*/
+
+.img-container {
+  margin-left: auto;
+  width: 100%;
+  margin-right: auto;
+  height: 50vh;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.course-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #E4B7E5;
+  border-color:#9A48D0;
+}
+
+.course-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.instructor {
+  font-style: italic;
+  color: #666;
+}
+
+.description {
+  margin-top: 10px;
+  color: #555;
+}
+
+.course-details {
+  margin-top: 20px;
+}
+
+.detail-item {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.syllabus-summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #007bff;
+}
+.list {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  list-style-type: decimal;
+}
+
+
+
+
+/*Displaying result end*/
+
+/* Card start */
+.card-container-3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+  margin-top: 1rem; 
+}
+.card-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+  margin-top: 1rem; 
+}
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  background-color: #E4B7E5;
+  border-color:#9A48D0;
+}
+.card:hover {
+  box-shadow: 0 0.25rem 0.75rem #9A48D0;
+  transform: translate(10px);
+  transition: all 0.5s ease-in-out;
+  border: none;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  
+}
+progress {
+  position: relative;
+  top: 1rem;
+}
+/*Fancy Buttons*/
+.gm-btn{
+    background: white;
+    border: 2px solid black;
+    padding: 5px 15px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 400;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+.gb-cutter::before,
+.gb-shutter::before,
+.gb-shutter::after,
+.gb-bordered::before,
+.gb-split::before
+{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: 0.5s;
+}
+.gb-shutter{
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 black;
+    font-size: 1.125rem;
+    font-weight: 700;
+    overflow: hidden;
+    color: black;
+}
+.gb-shutter::after, .gb-shutter::before{
+    top: 0;
+    left: 0;
+    width: 130%;
+    aspect-ratio: 1;
+    background: black;
+}
+.gb-shutter::after{
+    transform: translate(-100%,-80%) rotate(30deg);
+}
+.gb-shutter::before{
+    transform: translate(100%,30%) rotate(30deg);
+}
+.gb-shutter:hover::after{
+    transform: translate(-50%,-50%) rotate(30deg);
+}
+.gb-shutter:hover::before{
+    transform: translate(30%,-10%) rotate(30deg);
+}
+
+/*Fancy Buttons*/
+
+
+/* Card end */
+
+/*For smaller devices*/
+@media screen and (max-width: 1000px) {
+  .card-container-3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+  margin-top: 1rem; 
+}
+}
+
+@media screen and (max-width: 600px) {
+  .card-container-3 {
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+  margin-top: 1rem; 
+}
+}
+
+/*For smaller devices*/
+
