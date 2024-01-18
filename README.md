@@ -3,7 +3,8 @@
 Steps to use the project:
 ## To load the project
 1.After taking pull or downloading the file, open cmd in that path.<br>
-2.In cmd, type npm run dev to start the project.<br>
+2.In cmd, type npm install to install dependencies.<br>
+2.Then type npm run dev to start the project.<br>
 3.Copy the url shown and paste it on the browser.
 
 ## Home 
