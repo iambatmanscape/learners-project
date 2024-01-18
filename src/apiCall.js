@@ -3,9 +3,9 @@
 async function call(s) {
     let api;
   if(s) {
-	api=`https://mockcourses.free.beeceptor.com/${s}`;
+	api=`https://mockcourse.free.beeceptor.com/${s}`;
 } else {
-    api='https://mockcourses.free.beeceptor.com/';
+    api='https://mockcourse.free.beeceptor.com';
 }
 
     try {
